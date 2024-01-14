@@ -1,28 +1,45 @@
 <template>
- <div class="container">
-  <nav class="nav-bar">
-    <p class="my-name"><b></b>Kyle A. Piacenta Portfolio<b></b></p>
-    <div class="nav-links">
-    <a href="" class="links">Home</a>
-    <a href="" class="links">GitHub</a>
-    <a href="" class="links">LinkedIn</a>
-    <a href="" class="links">Projects</a>
-    <a href="" class="links">Experience</a>
+  <div class="container">
+    <nav class="nav-bar">
+      <p class="my-name"><b></b>Kyle A. Piacenta Portfolio<b></b></p>
+      <div class="nav-links">
+        <a href="" class="links">Home</a>
+        <a href="" class="links">GitHub</a>
+        <a href="" class="links">LinkedIn</a>
+        <a href="" class="links">Projects</a>
+        <a href="" class="links">Experience</a>
+      </div>
+    </nav>
+    <div class="about-me">
+      <div class="about-me-section">
+        <img src="../src/assets/headShot.jpeg" alt="photo" class="photo">
+        <h2 class="description">As a professional who has successfully transitioned from company management to the tech industry, I bring a unique combination of strategic business acumen and extensive technical expertise. My background in business management has instilled in me a deep understanding of market dynamics, while my current role in technology has seen me develop robust skills in Java, Spring Boot, JDBC, DAOs, REST API development, MVC architecture, Microservices, PostgreSQL, JavaScript, HTML/CSS, Vue.js, Express.js, and Node.js. This blend of management experience and technical proficiency makes me uniquely capable of bridging the gap between operational demands and technological solutions, ensuring project alignment with business goals. My journey through different sectors has not only honed my problem-solving skills but also equipped me to adapt and excel in the fast-paced and evolving tech landscape, making me a valuable asset to any team or project in need of a dynamic and versatile professional.
+
+</h2>
+
+
+
+      </div>
+    </div>
   </div>
-  </nav>
- </div>
-  
+
 </template>
 
 
 <script>
+export default {
+  data() {
+    return {
+ 
+    }
+  }
+}
 
 </script>
 
 <style scoped>
-
 body {
-  background-color: #333333; 
+  background-image: url('https://as2.ftcdn.net/v2/jpg/03/52/58/99/1000_F_352589922_wrQkznnjAYjCX0OOhryzYgzsWAOZboBN.jpg');
 }
 
 .nav-bar {
@@ -45,23 +62,64 @@ body {
 }
 
 .links {
-  margin: 0 10px; 
+  margin: 0 10px;
   font-family: monospace;
   font-size: 1.2rem;
   text-decoration: none;
   color: rgb(23, 160, 162);
-  
+
 }
 
 .links:hover {
- text-decoration: underline 1px solid rgb(23, 160, 162);
+  text-decoration: underline 1px solid rgb(23, 160, 162);
 }
 
 .my-name {
-  margin-right: auto; /* Pushes everything else to the right */
+  margin-right: auto;
+  /* Pushes everything else to the right */
   margin-left: 7px;
   font-family: monospace;
   font-size: 1.3rem;
 }
 
+.about-me {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-family: monospace;
+  width: 191vh;
+  border: 1.5px solid rgb(148, 147, 147);
+  height: 600px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.about-me-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.description {
+  /* width: 700px; */
+  display: flex;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  font-family: monospace;
+  margin-left: 100px;
+  font-family: monospace;
+}
+
+.photo {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  height: 500px;
+  border-radius: 50%;;
+  margin: 20px;
+  border: 2px solid black;
+  box-shadow:rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  
+}
 </style>
