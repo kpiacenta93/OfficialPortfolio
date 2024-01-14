@@ -4,8 +4,8 @@
       <p class="my-name"><b></b>Kyle A. Piacenta Portfolio<b></b></p>
       <div class="nav-links">
         <a href="" class="links">Home</a>
-        <a href="" class="links">GitHub</a>
-        <a href="" class="links">LinkedIn</a>
+        <a href="https://github.com/kpiacenta93" class="links">GitHub</a>
+        <a href="https://www.linkedin.com/in/kyle-piacenta/" class="links">LinkedIn</a>
         <a href="" class="links">Projects</a>
         <a href="" class="links">Experience</a>
       </div>
@@ -13,16 +13,21 @@
     <div class="about-me">
       <div class="about-me-section">
         <img src="../src/assets/headShot.jpeg" alt="photo" class="photo">
-        <h2 class="description">As a professional who has successfully transitioned from company management to the tech industry, I bring a unique combination of strategic business acumen and extensive technical expertise. My background in business management has instilled in me a deep understanding of market dynamics, while my current role in technology has seen me develop robust skills in Java, Spring Boot, JDBC, DAOs, REST API development, MVC architecture, Microservices, PostgreSQL, JavaScript, HTML/CSS, Vue.js, Express.js, and Node.js. This blend of management experience and technical proficiency makes me uniquely capable of bridging the gap between operational demands and technological solutions, ensuring project alignment with business goals. My journey through different sectors has not only honed my problem-solving skills but also equipped me to adapt and excel in the fast-paced and evolving tech landscape, making me a valuable asset to any team or project in need of a dynamic and versatile professional.
-
-</h2>
-
-
-
+        <h6>About me:</h6>
+        <h2 class="description">As a professional who has successfully transitioned from company management to the tech
+          industry, I bring a unique combination of strategic business acumen and extensive technical expertise. My
+          background in business management has instilled in me a deep understanding of market dynamics, while my current
+          role in technology has seen me develop robust skills in Java, Spring Boot, JDBC, DAOs, REST API development, MVC
+          architecture, Microservices, PostgreSQL, JavaScript, HTML/CSS, Vue.js, Express.js, and Node.js. This blend of
+          management experience and technical proficiency makes me uniquely capable of bridging the gap between
+          operational demands and technological solutions, ensuring project alignment with business goals. My journey
+          through different sectors has not only honed my problem-solving skills but also equipped me to adapt and excel
+          in the fast-paced and evolving tech landscape, making me a valuable asset to any team or project in need of a
+          dynamic and versatile professional.
+        </h2>
       </div>
     </div>
   </div>
-
 </template>
 
 
@@ -30,7 +35,7 @@
 export default {
   data() {
     return {
- 
+
     }
   }
 }
@@ -99,6 +104,7 @@ body {
   align-items: center;
   flex-direction: row;
 }
+
 .description {
   /* width: 700px; */
   display: flex;
@@ -116,10 +122,44 @@ body {
   justify-content: center;
   align-items: start;
   height: 500px;
-  border-radius: 50%;;
+  border-radius: 50%;
+  ;
   margin: 20px;
   border: 2px solid black;
-  box-shadow:rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+@media (max-width: 468px) { 
+  .nav-bar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links, .my-name {
+    margin-top: 10px;
+  }
+
+  .about-me {
+    width: auto;
+    padding: 10px; 
+    box-sizing: border-box; 
+  }
+
+  .about-me-section {
+    flex-direction: column; 
+  }
+
+  .description {
+    margin-left: 0; 
+    font-size: 1rem; 
+    text-align: center; 
+  }
+
+  .photo {
+    width: 100%; 
+    max-width: 300px; 
+    height: auto; 
+    margin: 0 auto; 
+  }
 }
 </style>
