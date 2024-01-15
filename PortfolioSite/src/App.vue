@@ -1,16 +1,21 @@
 <template>
   <div class="container">
+    
     <nav class="nav-bar">
       <p class="my-name"><b></b>Kyle A. Piacenta Portfolio<b></b></p>
       <div class="nav-links">
-        <a href="" class="links">Home</a>
+        <router-link to="" href="" class="links">Home</router-link>
         <a href="https://github.com/kpiacenta93" class="links">GitHub</a>
         <a href="https://www.linkedin.com/in/kyle-piacenta/" class="links">LinkedIn</a>
         <a href="#projects-section" class="links">Projects</a>
         <a href="#work-exp" class="links">Experience</a>
+        <router-link to="/VideoView" class="links">VideoResume</router-link>
         <a class="connect" href="mailto:piacentakyle@gmail.com" method="post" enctype="text/plain">Lets connect</a>
+       
       </div>
+      
     </nav>
+    <!-- <router-view/> -->
     <h3 class="about-me-title">About Me:</h3>
     <div class="about-me">
       <div class="about-me-section">
@@ -37,10 +42,7 @@
         <span class="hover-text">abc</span>
         <a class="p2" href="https://github.com/kpiacenta93/MoneyTransferApp">Backend Venmo App</a>
         <span class="hover-text">acs</span>
-        <a class="p3" href="https://github.com/kpiacenta93/PotholeTrackerApp">Pothole Patrole <a
-            href="https://www.loom.com/share/945ef7a694364b008be39642e372b806?sid=a7208ee9-bfd4-483a-88aa-b32deac3e6c4">Video
-            Demo</a></a>
-
+        <a class="p3" href="https://github.com/kpiacenta93/PotholeTrackerApp">Pothole Patrole</a>
         <span class="hover-text">asdas</span>
         <a class="p4" href="https://github.com/kpiacenta93/vue-router-setup">Application Tracker</a>
         <span class="hover-text">asda</span>
@@ -67,7 +69,8 @@
         <p>Drafted clear and fair customer contracts, devised creative yearly payment plans, and enhanced financial
           options, leading to exemplary customer service standards, increased client trust, and higher business cash flow.
         </p>
-        <p><b>Skills Obtained:</b> Workload Prioritization, Problem Solving, Administrative Organization, General Office Work,
+        <p><b>Skills Obtained:</b> Workload Prioritization, Problem Solving, Administrative Organization, General Office
+          Work,
           Customer Satisfaction, Sales, Management.</p>
 
 
@@ -87,6 +90,7 @@
   </div>
 
   <footer class="footer"><span>&copy; Kyle Piacenta's Portfolio 2023</span></footer>
+  
 </template>
 
 
@@ -118,18 +122,20 @@ body {
   text-decoration: underline;
   font-size: 1.4rem;
 }
+
 .company-name {
   font-size: 1.2rem;
-  
+
 }
+
 .work-box {
   background-color: white;
-  flex: 1; /* Equal flex basis for each box */
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 30%; /* Initial width */
+  width: 30%;
   padding: 15px;
   border: 1px solid #575353;
   height: 500px;
@@ -137,15 +143,15 @@ body {
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
   font-family: monospace;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-sizing: border-box; /* Include padding and border in the box's size */
+  box-sizing: border-box;
   margin-bottom: 50px;
 }
 
 .work-box:hover {
   display: flex;
   text-align: center;
-  transform: scale(1.5); /* Scale up box on hover */
-  z-index: 2; /* Ensure it's above other elements */
+  transform: scale(1.5);
+  z-index: 2;
   margin-left: 140px;
   margin-right: 140px;
   font-size: 0.6rem;
@@ -232,25 +238,17 @@ body {
 .hover-text {
   position: absolute;
   opacity: 0;
-  /* Initially hidden */
   transition: opacity 0.3s ease, transform 0.3s ease;
   transform: translateY(20px);
-  /* Adjust for effect */
   width: 100%;
-  /* Set width */
   text-align: center;
-  /* Center text horizontally */
   bottom: 10px;
-  /* Position from bottom */
   color: white;
-  /* Text color */
 }
 
 .project-divs a:hover .hover-text {
   opacity: 1;
-  /* Show text on hover */
   transform: translateY(0);
-  /* Adjust for effect */
 }
 
 .projects-title {
