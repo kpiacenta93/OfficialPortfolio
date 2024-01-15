@@ -7,10 +7,11 @@
         <a href="https://github.com/kpiacenta93" class="links">GitHub</a>
         <a href="https://www.linkedin.com/in/kyle-piacenta/" class="links">LinkedIn</a>
         <a href="#projects-section" class="links">Projects</a>
-        <a href="" class="links">Experience</a>
+        <a href="#work-exp" class="links">Experience</a>
         <a class="connect" href="mailto:piacentakyle@gmail.com" method="post" enctype="text/plain">Lets connect</a>
       </div>
     </nav>
+    <h3 class="about-me-title">About Me:</h3>
     <div class="about-me">
       <div class="about-me-section">
         <img src="../src/assets/headShot.jpeg" alt="photo" class="photo">
@@ -26,7 +27,9 @@
           dynamic and versatile professional.
         </h2>
       </div>
+
     </div>
+    <!-- <h4 class="projects-title">Projects</h4> -->
     <div class="projects" id="projects-section">
       <!-- <h4 class="projects-title">Projects</h4> -->
       <div class="project-divs" href="projects">
@@ -34,18 +37,55 @@
         <span class="hover-text">abc</span>
         <a class="p2" href="https://github.com/kpiacenta93/MoneyTransferApp">Backend Venmo App</a>
         <span class="hover-text">acs</span>
-        <a class="p3" href="https://github.com/kpiacenta93/PotholeTrackerApp">Pothole Patrole</a>
+        <a class="p3" href="https://github.com/kpiacenta93/PotholeTrackerApp">Pothole Patrole <a
+            href="https://www.loom.com/share/945ef7a694364b008be39642e372b806?sid=a7208ee9-bfd4-483a-88aa-b32deac3e6c4">Video
+            Demo</a></a>
+
         <span class="hover-text">asdas</span>
         <a class="p4" href="https://github.com/kpiacenta93/vue-router-setup">Application Tracker</a>
         <span class="hover-text">asda</span>
-        <a class="p5" href="https://github.com/kpiacenta93/RandomPasswordGenerator">Random Password Generator</a>
+        <a class="p5" href="https://dev3774.d28huaaxdc1rfd.amplifyapp.com/">Random Password Generator</a>
         <span class="hover-text">asda</span>
+        <a class="p5" href="https://dev1044.d2fguqojy8kbjj.amplifyapp.com/">Quote Generator</a>
+        <a class="p5" href="https://dev1044.d2fguqojy8kbjj.amplifyapp.com/">Quote Generator</a>
+        <a class="p5" href="https://dev1044.d2fguqojy8kbjj.amplifyapp.com/">Quote Generator</a>
+        <a class="p5" href="https://dev1044.d2fguqojy8kbjj.amplifyapp.com/">Quote Generator</a>
+        <a class="p5" href="https://dev1044.d2fguqojy8kbjj.amplifyapp.com/">Quote Generator</a>
+      </div>
+    </div>
+    <div class="work-experience" id="work-exp">
+      <div class="work-box" id="work1">
+        <h3 class="job-title">Director Of Administrative Operations</h3>
+        <p class="company-name"><b>Adriano's Lawn Care</b></p>
+        <p>Led workflow optimization initiatives, resulting in a 15% boost in business acquisition through strategic
+          planning and improved client relationship management, demonstrating skills in growth driving and client
+          engagement.</p>
+        <p>Increased team efficiency by 20% through effective service scheduling and route optimization, showcasing strong
+          organizational and logistical abilities.</p>
+        <p>Achieved a 25% reduction in billing errors via meticulous customer database management, enhancing financial
+          transaction accuracy and reliability.</p>
+        <p>Drafted clear and fair customer contracts, devised creative yearly payment plans, and enhanced financial
+          options, leading to exemplary customer service standards, increased client trust, and higher business cash flow.
+        </p>
+        <p><b>Skills Obtained:</b> Workload Prioritization, Problem Solving, Administrative Organization, General Office Work,
+          Customer Satisfaction, Sales, Management.</p>
 
 
       </div>
+      <div class="work-box" id="work2">
+        <h3>Job Title 2</h3>
+        <br>
+        <p>Company 2</p>
+        <!-- More info about Job 2 -->
+      </div>
+      <div class="work-box" id="work3">
+        <h3>Job Title 3</h3>
+        <p>Company 3</p>
+        <!-- More info about Job 3 -->
+      </div>
     </div>
-
   </div>
+
   <footer class="footer"><span>&copy; Kyle Piacenta's Portfolio 2023</span></footer>
 </template>
 
@@ -67,9 +107,70 @@ body {
   background-image: url('https://as2.ftcdn.net/v2/jpg/03/52/58/99/1000_F_352589922_wrQkznnjAYjCX0OOhryzYgzsWAOZboBN.jpg');
 }
 
+.work-experience {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 20px
+}
+
+.job-title {
+  text-decoration: underline;
+  font-size: 1.4rem;
+}
+.company-name {
+  font-size: 1.2rem;
+  
+}
+.work-box {
+  background-color: white;
+  flex: 1; /* Equal flex basis for each box */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 30%; /* Initial width */
+  padding: 15px;
+  border: 1px solid #575353;
+  height: 500px;
+  margin: 5px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  font-family: monospace;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box; /* Include padding and border in the box's size */
+  margin-bottom: 50px;
+}
+
+.work-box:hover {
+  display: flex;
+  text-align: center;
+  transform: scale(1.5); /* Scale up box on hover */
+  z-index: 2; /* Ensure it's above other elements */
+  margin-left: 140px;
+  margin-right: 140px;
+  font-size: 0.6rem;
+}
+
+
+
+.about-me-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: monospace;
+  margin-bottom: 10px;
+}
+
+.project-divs a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .project-divs {
   color: whitesmoke;
-  font-size: 4rem;
+  font-size: 3rem;
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -77,11 +178,20 @@ body {
   flex-wrap: wrap;
   gap: 15px;
   margin-top: 0px;
-  
+  margin-right: ;
+
   /* background-image: url('https://as2.ftcdn.net/v2/jpg/03/52/58/99/1000_F_352589922_wrQkznnjAYjCX0OOhryzYgzsWAOZboBN.jpg'); */
   /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
   /* margin-bottom: 30px; */
 }
+
+/* .projects-title {
+  display: flex;
+  align-items: center;
+  text-align: center;
+ 
+  justify-content: center;
+} */
 
 .project-divs .p1,
 .project-divs .p2,
@@ -97,10 +207,10 @@ body {
   margin-left: 10px;
   border-radius: 15px;
   width: 300px;
-  height: 400px;
+  height: 300px;
   border: 1px solid black;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  
+
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -112,26 +222,37 @@ body {
 .project-divs .p3:hover,
 .project-divs .p4:hover,
 .project-divs .p5:hover {
-  transform: scale(1.86);
+  transform: scale(1.66);
   /* Scales up the div on hover */
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
   /* Optional: Adds a shadow for depth */
   border: 2px solid whitesmoke;
 }
+
 .hover-text {
   position: absolute;
-  opacity: 0; /* Initially hidden */
+  opacity: 0;
+  /* Initially hidden */
   transition: opacity 0.3s ease, transform 0.3s ease;
-  transform: translateY(20px); /* Adjust for effect */
-  width: 100%; /* Set width */
-  text-align: center; /* Center text horizontally */
-  bottom: 10px; /* Position from bottom */
-  color: white; /* Text color */
+  transform: translateY(20px);
+  /* Adjust for effect */
+  width: 100%;
+  /* Set width */
+  text-align: center;
+  /* Center text horizontally */
+  bottom: 10px;
+  /* Position from bottom */
+  color: white;
+  /* Text color */
 }
+
 .project-divs a:hover .hover-text {
-  opacity: 1; /* Show text on hover */
-  transform: translateY(0); /* Adjust for effect */
+  opacity: 1;
+  /* Show text on hover */
+  transform: translateY(0);
+  /* Adjust for effect */
 }
+
 .projects-title {
   margin-bottom: 760px;
   font-family: monospace;
@@ -143,10 +264,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 20px;
   height: 800px;
   border: 1px solid grey;
-  width: 1897px;
+  width: 1882px;
   overflow: auto;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 
