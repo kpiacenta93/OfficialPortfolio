@@ -1,25 +1,29 @@
 <template>
+
   <div class="container">
-    
     <nav class="nav-bar">
+      
       <p class="my-name"><b></b>Kyle A. Piacenta Portfolio<b></b></p>
       <div class="nav-links">
-        <router-link to="" href="" class="links">Home</router-link>
+        <router-link to="/Home" href="" class="links">Home</router-link>
         <a href="https://github.com/kpiacenta93" class="links">GitHub</a>
         <a href="https://www.linkedin.com/in/kyle-piacenta/" class="links">LinkedIn</a>
         <a href="#projects-section" class="links">Projects</a>
         <a href="#work-exp" class="links">Experience</a>
         <router-link to="/VideoView" class="links">VideoResume</router-link>
+        
         <a class="connect" href="mailto:piacentakyle@gmail.com" method="post" enctype="text/plain">Lets connect</a>
-       
+      
       </div>
       
     </nav>
-    <!-- <router-view/> -->
-    <h3 class="about-me-title">About Me:</h3>
+    
+    
     <div class="about-me">
+      
       <div class="about-me-section">
         <img src="../src/assets/headShot.jpeg" alt="photo" class="photo">
+        <p class="about-me-title">About Me:</p>
         <h2 class="description">As a professional who has successfully transitioned from company management to the tech
           industry, I bring a unique combination of strategic business acumen and extensive technical expertise. My
           background in business management has instilled in me a deep understanding of market dynamics, while my current
@@ -39,20 +43,17 @@
       <!-- <h4 class="projects-title">Projects</h4> -->
       <div class="project-divs" href="projects">
         <a class="p1" href="https://github.com/kpiacenta93/VendingMachineOOP">Vending Machine</a>
-        <span class="hover-text">abc</span>
+
         <a class="p2" href="https://github.com/kpiacenta93/MoneyTransferApp">Backend Venmo App</a>
-        <span class="hover-text">acs</span>
+       
         <a class="p3" href="https://github.com/kpiacenta93/PotholeTrackerApp">Pothole Patrole</a>
-        <span class="hover-text">asdas</span>
+        
         <a class="p4" href="https://github.com/kpiacenta93/vue-router-setup">Application Tracker</a>
-        <span class="hover-text">asda</span>
+       
         <a class="p5" href="https://dev3774.d28huaaxdc1rfd.amplifyapp.com/">Random Password Generator</a>
-        <span class="hover-text">asda</span>
-        <a class="p5" href="https://dev1044.d2fguqojy8kbjj.amplifyapp.com/">Quote Generator</a>
-        <a class="p5" href="https://dev1044.d2fguqojy8kbjj.amplifyapp.com/">Quote Generator</a>
-        <a class="p5" href="https://dev1044.d2fguqojy8kbjj.amplifyapp.com/">Quote Generator</a>
-        <a class="p5" href="https://dev1044.d2fguqojy8kbjj.amplifyapp.com/">Quote Generator</a>
-        <a class="p5" href="https://dev1044.d2fguqojy8kbjj.amplifyapp.com/">Quote Generator</a>
+       
+        <!-- <a class="p5" href="https://dev1044.d2fguqojy8kbjj.amplifyapp.com/">Quote Generator</a> -->
+  
       </div>
     </div>
     <div class="work-experience" id="work-exp">
@@ -88,7 +89,7 @@
       </div>
     </div>
   </div>
-
+  
   <footer class="footer"><span>&copy; Kyle Piacenta's Portfolio 2023</span></footer>
   
 </template>
@@ -111,6 +112,12 @@ body {
   background-image: url('https://as2.ftcdn.net/v2/jpg/03/52/58/99/1000_F_352589922_wrQkznnjAYjCX0OOhryzYgzsWAOZboBN.jpg');
 }
 
+.about-me-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+}
 .work-experience {
   display: flex;
   justify-content: space-between;
@@ -148,6 +155,7 @@ body {
 }
 
 .work-box:hover {
+  
   display: flex;
   text-align: center;
   transform: scale(1.5);
@@ -216,11 +224,16 @@ body {
   height: 300px;
   border: 1px solid black;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-
+  /* position: relative; */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-image: url('https://as2.ftcdn.net/v2/jpg/03/52/58/99/1000_F_352589922_wrQkznnjAYjCX0OOhryzYgzsWAOZboBN.jpg');
+}
+
+.project-divs a:hover .hover-text {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .project-divs .p1:hover,
@@ -229,26 +242,33 @@ body {
 .project-divs .p4:hover,
 .project-divs .p5:hover {
   transform: scale(1.66);
-  /* Scales up the div on hover */
+  color:rgba(0, 0, 0, 0);
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-  /* Optional: Adds a shadow for depth */
-  border: 2px solid whitesmoke;
+  background-color: white;
+  border: 2px solid rgb(15, 183, 192);
 }
 
-.hover-text {
+.project-divs  .hover-text {
   position: absolute;
-  opacity: 0;
-  transition: opacity 0.3s ease, transform 0.3s ease;
-  transform: translateY(20px);
-  width: 100%;
+  /* bottom: 10px; 
+  width: 100%; */
   text-align: center;
-  bottom: 10px;
+  opacity: 1; 
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: translateY(20px); 
   color: white;
+  left: 0; 
 }
 
-.project-divs a:hover .hover-text {
+ .hover-text:hover {
+  /* background-color: #575353; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   opacity: 1;
   transform: translateY(0);
+  color: white;
 }
 
 .projects-title {
@@ -367,20 +387,16 @@ body {
 }
 
 .description {
-  /* width: 700px; */
+  width: 100vh;;
   display: flex;
   height: 500px;
   justify-content: center;
   align-items: center;
   margin-top: 60px;
   font-family: monospace;
-  margin-left: 100px;
+  margin-left: 60px;
   font-family: monospace;
 }
-
-
-
-
 
 .photo {
   display: flex;
@@ -388,7 +404,7 @@ body {
   align-items: start;
   height: 500px;
   border-radius: 50%;
-  ;
+  margin-right: 300px;
   margin: 20px;
   border: 2px solid black;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;

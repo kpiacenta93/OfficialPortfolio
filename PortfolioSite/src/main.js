@@ -13,7 +13,7 @@ const routes = [
 
     {
         name: "App",
-        path: "/",
+        path: "/Home",
         component: App
     }
 ];
