@@ -3,6 +3,8 @@ import './style.css'
 import App from './App.vue'
 import { createRouter, createWebHistory} from 'vue-router'
 import VideoView from './views/VideoView.vue'
+// import aboutMe from './components/aboutMe.vue'
+import HomeView from './views/HomeView.vue'
 
 const routes = [
     {
@@ -12,9 +14,9 @@ const routes = [
     },
 
     {
-        name: "App",
-        path: "/Home",
-        component: App
+        name: "home",
+        path: "/",
+        component: HomeView
     }
 ];
 

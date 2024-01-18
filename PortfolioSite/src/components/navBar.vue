@@ -1,21 +1,20 @@
 <template>
-    <div class="container">
+    <div class="app-container">
         <nav class="nav-bar">
-
             <p class="my-name"><b></b>Kyle A. Piacenta Portfolio<b></b></p>
             <div class="nav-links">
-                <router-link to="/Home" href="" class="links">Home</router-link>
+                <router-link v-bind:to="{name: 'home'}" class="links">Home</router-link>
                 <a href="https://github.com/kpiacenta93" class="links">GitHub</a>
                 <a href="https://www.linkedin.com/in/kyle-piacenta/" class="links">LinkedIn</a>
                 <a href="#projects-section" class="links">Projects</a>
                 <a href="#work-exp" class="links">Experience</a>
-                <router-link to="/VideoView" class="links">VideoResume</router-link>
-
-                <a class="connect" href="mailto:piacentakyle@gmail.com" method="post" enctype="text/plain">Lets connect</a>
+                <router-link v-bind:to="{name: 'VideoView'}" class="links">VideoResume</router-link>
+                <a class="connect" href="mailto:piacentakyle@gmail.com">Lets connect</a>
             </div>
         </nav>
     </div>
 </template>
+
 
 
 <script>

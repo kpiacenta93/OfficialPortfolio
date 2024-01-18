@@ -1,8 +1,8 @@
 <template>
   <div class="container">
     <navBar />
-
-    <aboutMe />
+    <router-view/>
+    <!-- <HomeView/> -->
 
   </div>
   <footer class="footer"><span>&copy; Kyle Piacenta's Portfolio 2023</span></footer>
@@ -10,14 +10,15 @@
 
 
 <script>
-import aboutMe from './components/aboutMe.vue'
+// import aboutMe from './components/aboutMe.vue'
+import HomeView from './views/HomeView.vue';
 import navBar from './components/navBar.vue'
 
 export default {
 
   components: {
     navBar,
-    aboutMe,
+    HomeView
   },
 
   data() {
